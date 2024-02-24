@@ -1,0 +1,145 @@
+/* 24 Feb */
+.get-resopnse {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 2px solid #000;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-resopnse:hover {
+    background-color: #45a049;
+  }
+.container-slide-show {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 10px;
+  }
+  
+  .container-slide-show .item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* var arrayOfimgforSlideShow=document.querySelectorAll(".item img "); */
+  
+  .container-slide-show .item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .container-slide-show .item .caption {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #000000b8;
+    color: #fff;
+    font-family: cursive;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -100%;
+    transition: 0.3s;
+ 
+  }
+  
+  .container-slide-show .item:hover .caption {
+    bottom: 20px;
+  }
+  
+  .container-slide-show .item .caption h3 {
+    width: 100%;
+  }
+  
+  .container-slide-show .item .caption p {
+    width: 100%;
+    background-color: #00000061;
+  }
+  
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  z-index: 9999; /* Ensure the overlay is on top of other content */
+}
+
+/* Popup */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; /* white background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* shadow effect */
+  width: 80%; /* Set the width to 80% of the viewport width */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Let the height adjust based on content */
+  /* max-height: 80%; /* Set a maximum height */
+  /* overflow-y: auto; Add vertical scrollbar if needed */ 
+}
+.popup img{
+  height: 500px;
+}
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+/* Caption */
+.caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+  .task-title {
+    width: 155px;
+    display: block;
+    margin: 20px auto;
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom: 7px solid yellow;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 2em;
+    border-top: 7px solid yellowgreen;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+ 
+  }
+  
+  .task-title:hover {
+    border-bottom-color: yellowgreen;
+    border-top-color: yellow;
+    background-color: #dddddd36;
+    /* font-family: sans-serif; */
+  }
+  /*  */
+  
